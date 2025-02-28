@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1957 Chevrolet Bel Air</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="scripts/belair-customization.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">Vintage Car Garage</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#our-work">Our Work</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <!-- In the navigation bar -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/booking.html" target="_blank">Book Online</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  
+    <div class="container py-5">
+        <h1>1957 Chevrolet Bel Air</h1>
+        <img src="/images/belair.jpg" class="img-fluid car-image" alt="1957 Chevrolet Bel Air">
+        <p class="mt-3">The 1957 Chevrolet Bel Air is an iconic vintage car known for its sleek design and chrome accents. It is a symbol of 1950s American automotive excellence and remains a favorite among classic car enthusiasts.</p>
+        <p><strong>Base Price: $50,000</strong></p>
+
+        <h2>Customize Your Bel Air</h2>
+        <form id="customizationForm">
+            <div class="form-group">
+                <label for="color">Color</label>
+                <select class="form-control" id="color">
+                    <option value="Red">Red (+$500)</option>
+                    <option value="Blue">Blue (+$500)</option>
+                    <option value="Black">Black (+$500)</option>
+                    <option value="White">White (+$500)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="interior">Interior</label>
+                <select class="form-control" id="interior">
+                    <option value="Leather">Leather (+$1,000)</option>
+                    <option value="Cloth">Cloth (+$500)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="wheels">Wheels</label>
+                <select class="form-control" id="wheels">
+                    <option value="Standard">Standard (+$0)</option>
+                    <option value="Alloy">Alloy (+$1,500)</option>
+                    <option value="Chrome">Chrome (+$2,000)</option>
+                </select>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="showSummary()">Review Customization</button>
+        </form>
+
+        <div id="summary" class="mt-4" style="display:none;">
+            <h3>Customization Summary</h3>
+            <ul id="summaryList"></ul>
+            <p><strong>Total Price: <span id="totalPrice"></span></strong></p>
+            <button type="button" class="btn btn-success" onclick="payNow()">Pay Now</button>
+        </div>
+
+        <div id="thankYouMessage" class="mt-4" style="display:none;">
+            <h3>Thank You for Your Purchase!</h3>
+            <p>Your customized 1957 Chevrolet Bel Air will be ready soon.</p>
+        </div>
+
+        <a href="index.html" class="btn btn-secondary mt-3">Back to Gallery</a>
+    </div>
+
+    <script src="scripts/belair-customization.js"></script>
+</body>
+</html>

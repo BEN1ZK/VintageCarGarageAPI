@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Car Garage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">Vintage Car Garage</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#our-work">Our Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/booking.html" target="_blank">Book Online</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login.html" target="_blank">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/signup.html" target="_blank">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-center text-white py-5" style="background-image: url('/images/hero.jpg'); background-size: cover; background-position: center;">
+        <div class="container">
+            <h1 class="display-4">Welcome to Vintage Car Garage</h1>
+            <p class="lead">Your destination for classic car restoration and services.</p>
+            <a href="#services" class="btn btn-primary btn-lg">Explore Our Services</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">About Us</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto about-frame">
+                    <p class="lead text-center">
+                        Welcome to Vintage Car Garage, where passion meets precision. We are a dedicated team of classic car enthusiasts with decades of experience in restoring and maintaining vintage automobiles. Our mission is to bring these timeless machines back to life, preserving their legacy for future generations.
+                    </p>
+                    <p class="text-center">
+                        At Vintage Car Garage, we offer a range of services including full restorations, routine maintenance, and custom modifications. Our skilled technicians use the latest tools and techniques to ensure your classic car receives the care it deserves. Whether you own a rare collectible or a beloved family heirloom, we are here to help you keep it running smoothly and looking stunning.
+                    </p>
+                    <p class="text-center">
+                        Our team is committed to providing exceptional service and personalized attention to every client. We understand the unique needs of vintage car owners and strive to exceed your expectations with every project. Visit us today and experience the difference of working with true professionals who share your passion for classic cars.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-light py-5">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div id="services-list" class="row"></div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <a href="/mustang-details.html" class="text-decoration-none">
+                        <div class="card">
+                            <img src="/images/mustang.jpg" class="card-img-top" alt="1967 Ford Mustang">
+                            <div class="card-body">
+                                <h5 class="card-title">1967 Ford Mustang</h5>
+                                <p class="card-text">A classic American muscle car.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="/belair-details.html" class="text-decoration-none">
+                        <div class="card">
+                            <img src="/images/belair.jpg" class="card-img-top" alt="1957 Chevrolet Bel Air">
+                            <div class="card-body">
+                                <h5 class="card-title">1957 Chevrolet Bel Air</h5>
+                                <p class="card-text">An iconic vintage car.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="/camaro-details.html" class="text-decoration-none">
+                        <div class="card">
+                            <img src="/images/camaro.jpg" class="card-img-top" alt="1969 Chevrolet Camaro">
+                            <div class="card-body">
+                                <h5 class="card-title">1969 Chevrolet Camaro</h5>
+                                <p class="card-text">A legendary muscle car with a bold design.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Work Section -->
+    <section id="our-work" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Work</h2>
+            <div class="row">
+                <!-- First Row -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="/images/work1.jpg" class="card-img-top" alt="Work 1">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="/images/work2.jpg" class="card-img-top" alt="Work 2">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="/images/work3.jpg" class="card-img-top" alt="Work 3">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Second Row -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="/images/work4.jpg" class="card-img-top" alt="Work 4">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="/images/work5.jpg" class="card-img-top" alt="Work 5">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="/images/work6.jpg" class="card-img-top" alt="Work 6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-dark text-white">
+        <div class="container text-center">
+            <span>&copy; 2023 Vintage Car Garage. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/site.js"></script>
+</body>
+</html>

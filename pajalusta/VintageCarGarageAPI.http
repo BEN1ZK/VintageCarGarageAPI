@@ -1,0 +1,6 @@
+@pajalusta_HostAddress = http://localhost:5088
+
+GET {{pajalusta_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

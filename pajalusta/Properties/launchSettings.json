@@ -1,0 +1,14 @@
+﻿{
+  "profiles": {
+    "VintageCarGarageAPI": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "index.html", // Add this line
+      "applicationUrl": "https://localhost:7108;http://localhost:5088",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

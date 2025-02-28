@@ -1,0 +1,200 @@
+﻿/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+.navbar {
+    margin-bottom: 0;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+/* About Us Section */
+#about {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+    #about h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #333;
+        text-align: center;
+    }
+
+.about-frame {
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#about .lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+/* Card Styles */
+.card {
+    transition: transform 0.3s ease-in-out;
+    border: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card img {
+        border-radius: 10px;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+/* Our Work Section */
+#our-work {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+    #our-work h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 40px;
+        color: #333;
+        text-align: center;
+    }
+
+    #our-work .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #our-work .col-md-4 {
+        display: flex;
+    }
+
+    #our-work .card {
+        flex: 1;
+    }
+
+        #our-work .card img {
+            width: 100%;
+            height: 200px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #our-work .card:hover img {
+            transform: scale(1.1);
+        }
+
+/* Booking Section */
+#booking {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+    #booking h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #333;
+        text-align: center;
+    }
+
+    #booking .form-group label {
+        font-weight: bold;
+    }
+
+    #booking .form-control {
+        border-radius: 5px;
+    }
+
+    #booking .btn-primary {
+        background-color: #007bff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+        #booking .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+/* Contact Form */
+#contact-form .form-group {
+    margin-bottom: 1rem;
+}
+
+#contact-form .form-control {
+    border-radius: 5px;
+}
+
+/* Custom CSS for car detail pages */
+.car-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#summary {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#thankYouMessage {
+    background-color: #d4edda;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: #155724;
+}
+
+/* Footer */
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 10px;
+}
+
+.toggle-link {
+    margin-top: 1rem;
+    color: #007bff;
+    cursor: pointer;
+    text-align: center;
+}
