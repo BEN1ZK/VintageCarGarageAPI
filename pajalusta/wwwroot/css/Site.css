@@ -180,6 +180,32 @@ body {
     color: #155724;
 }
 
+/* Pay Now Button Styling */
+#payNowButton {
+    display: none; /* Hidden by default */
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Make it take full width */
+    text-align: center;
+    box-sizing: border-box;
+}
+
+    /* Add a visible class to show the button */
+    #payNowButton.show {
+        display: inline-block; /* This will make it appear */
+    }
+
+    /* Hover effect for the Pay Now button */
+    #payNowButton:hover {
+        background-color: #218838;
+    }
+
 /* Footer */
 .footer {
     background-color: #343a40;

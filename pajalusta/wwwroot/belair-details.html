@@ -5,48 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1957 Chevrolet Bel Air</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> 
-    <script src="scripts/belair-customization.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="/">Vintage Car Garage</a>
+            <a class="navbar-brand" href="/index.html">Vintage Car Garage</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="/index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="/about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
+                        <a class="nav-link" href="/services.html">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#gallery">Gallery</a>
+                        <a class="nav-link" href="/gallery.html">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#our-work">Our Work</a>
+                        <a class="nav-link" href="/contact.html">Contact</a>
                     </li>
-
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <!-- In the navigation bar -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="/booking.html" target="_blank">Book Online</a>
+                        <a class="nav-link" href="/booking.html">Book Online</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-  
     <div class="container py-5">
         <h1>1957 Chevrolet Bel Air</h1>
         <img src="/images/belair.jpg" class="img-fluid car-image" alt="1957 Chevrolet Bel Air">
@@ -86,17 +80,18 @@
             <h3>Customization Summary</h3>
             <ul id="summaryList"></ul>
             <p><strong>Total Price: <span id="totalPrice"></span></strong></p>
-            <button type="button" class="btn btn-success" onclick="payNow()">Pay Now</button>
         </div>
 
+        <!-- "Pay Now" button, always visible but initially hidden -->
+        <button id="payNowButton" class="btn btn-success mt-3" style="display:none;" onclick="processPayment()">Pay Now</button>
+
         <div id="thankYouMessage" class="mt-4" style="display:none;">
-            <h3>Thank You for Your Purchase!</h3>
+            <h3>🎉 Payment Successful!</h3>
             <p>Your customized 1957 Chevrolet Bel Air will be ready soon.</p>
         </div>
 
         <a href="index.html" class="btn btn-secondary mt-3">Back to Gallery</a>
     </div>
-
-    <script src="scripts/belair-customization.js"></script>
+    <script src="scripts/belair-customization.js" defer></script>
 </body>
 </html>

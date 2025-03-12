@@ -34,5 +34,21 @@ namespace VintageCarGarageAPI.Controllers
             }
             return Ok(car);
         }
+
+        // POST /api/cars
+        [HttpPost]
+        public ActionResult<Car> CreateCar([FromBody] Car car)
+        {
+            if (car == null)
+            {
+                return BadRequest("Car data is null.");
+            }
+
+            // Add the new car via the service which should save it to the database
+            _carService.AddCar(car);
+
+            // Return the created car with a 201 Created response, including a location header
+            return CreatedAtAction(nameof(GetCar), new { id = car.Id }, car);
+        }
     }
 }

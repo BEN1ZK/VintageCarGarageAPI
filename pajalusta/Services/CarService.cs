@@ -11,7 +11,7 @@ namespace VintageCarGarageAPI.Services
         public CarService(CarRepository carRepository)
         {
             _carRepository = carRepository;
-        }
+        }   
 
         public IEnumerable<Car> GetAllCars()
         {
@@ -27,7 +27,7 @@ namespace VintageCarGarageAPI.Services
         {
             _carRepository.AddCar(car);
         }
-
+        /*
         public void UpdateCar(Car car)
         {
             _carRepository.UpdateCar(car);
@@ -37,5 +37,6 @@ namespace VintageCarGarageAPI.Services
         {
             _carRepository.DeleteCar(id);
         }
+        */
     }
 }

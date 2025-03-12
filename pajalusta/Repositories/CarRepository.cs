@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using VintageCarGarageAPI.Data;
+﻿using VintageCarGarageAPI.Data;
 using VintageCarGarageAPI.Models;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace VintageCarGarageAPI.Repositories
 {
@@ -27,23 +27,9 @@ namespace VintageCarGarageAPI.Repositories
         public void AddCar(Car car)
         {
             _context.Cars.Add(car);
-            _context.SaveChanges();
+            _context.SaveChanges(); // Ensures the change is committed to the database
         }
 
-        public void UpdateCar(Car car)
-        {
-            _context.Cars.Update(car);
-            _context.SaveChanges();
-        }
-
-        public void DeleteCar(int id)
-        {
-            var car = _context.Cars.FirstOrDefault(c => c.Id == id);
-            if (car != null)
-            {
-                _context.Cars.Remove(car);
-                _context.SaveChanges();
-            }
-        }
+        // Optionally add update and delete methods as needed...
     }
 }

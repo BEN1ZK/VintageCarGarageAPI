@@ -31,11 +31,11 @@
                 phone: phone,
                 role: "user"
             };
-
+            
             console.log("🟢 Sending Payload:", JSON.stringify(user, null, 2)); // Debugging
-
+            
             try {
-                const response = await fetch('http://localhost:5088/api/users/register', {
+                const response = await fetch('http://localhost:7108/api/users/register', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -43,19 +43,25 @@
                     body: JSON.stringify(user),
                 });
 
-                const data = await response.json();
-                console.log("🔴 API Response:", data); // Debugging
-
-                if (response.ok) {
-                    alert('Registration successful!');
-                    window.location.href = '/login.html'; // Redirect to login page
-                } else {
-                    alert(data.message || 'Registration failed.');
+                if (!response.ok) {
+                    const errorText = await response.text();
+                    console.error("Server Error:", errorText);
+                    alert('Registration failed.');
+                    return;
                 }
+
+                const data = await response.json();
+                alert('Registration successful!');
+                window.location.href = '/login.html';
             } catch (error) {
-                console.error("🚨 Error during registration:", error);
+                console.error("Error during registration:", error);
                 alert('An error occurred while signing up.');
             }
+
+
+
         });
+        
     }
+    
 });
